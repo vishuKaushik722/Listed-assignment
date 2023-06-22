@@ -1,0 +1,5 @@
+.axis {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary-text, #858585);
+}
