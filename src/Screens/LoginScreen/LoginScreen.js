@@ -1,18 +1,18 @@
 import React from 'react';
 import { useGoogleLogin } from '@react-oauth/google';
-
 import './LoginStyle.css';
+import { useNavigate } from 'react-router-dom';
 
 const LoginScreen = () => {
 
 
-  const googleConfig = {
-    clientId: '866216253861-buq5dgbvaa4nefc5ujih47gqsfs3oo2o.apps.googleusercontent.com',
-    redirectUri: 'http://localhost:3000',
-  };
+  const navigate = useNavigate();
 
   const login = useGoogleLogin({
-    onSuccess: tokenResponse => console.log(tokenResponse),
+    onSuccess: tokenResponse => {
+      navigate("/main", {state : {token : tokenResponse}});
+      console.log("data from login page -- ", tokenResponse);
+    }
   });
 
   
