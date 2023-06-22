@@ -1,5 +1,18 @@
 .schedule-main {
     padding-left: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
-  
+
+.sch-title {
+    color: #666;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.sch-text {
+    color: var(--icon, #999);
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 5px;
+}

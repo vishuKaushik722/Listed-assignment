@@ -20,7 +20,7 @@ import {
   const ChartComponent = () => {
     return (
       <>
-        <LineChart width={1000} height={180} data={data}>
+        <LineChart width={1000} height={160} data={data}>
           <Line type="monotone" dataKey="Guest" stroke="#9BDD7C" strokeWidth={3} dot={false} />
           <Line
             type="monotone"

@@ -4,6 +4,7 @@ import Poster from '../../Components/Poster/Poster';
 import ChartComponent from '../../Components/Chart/ChartComponent';
 import PieChart from '../../Components/PieChart';
 import ScheduleInfo from '../../Components/ScheduleInfo/ScheduleInfo';
+import PieDetails from '../../Components/PieDetails/PieDetails';
 
 const MainScreen = () => {
   return (
@@ -67,7 +68,22 @@ const MainScreen = () => {
 
         <div className='row4'>
           <div className='card1'>
-            Left Card
+            <div className='pie-title'>
+              <div className='pie-heading'>
+                Top Products
+              </div>
+              <div className='pie-head-date'>
+              May - June 2021
+              </div>
+            </div>
+            <div className='pie-content'>
+              <PieChart />
+              <div className='pie-details'>
+                <PieDetails title={"Basic Trees"} pointcolor={"#98D89E"} percentage={55}/>
+                <PieDetails title={"Custom Short Pants"} pointcolor={"#F6DC7D"} percentage={31} />
+                <PieDetails title={"Super Hoodies"} pointcolor={"#EE8484"} percentage={14} />
+              </div>
+            </div>
           </div>
           <div className='card2'>
             <div className='schedule-box'>
@@ -78,8 +94,8 @@ const MainScreen = () => {
               See All 
               </div>
             </div>
-            <ScheduleInfo bordercolor={"#9BDD7C"}/>
-            <ScheduleInfo bordercolor={"#6972C3"} />
+            <ScheduleInfo title={"Meeting with suppliers from Kuta Bali"} bordercolor={"#9BDD7C"} time={"14.00-15.00"} location={"at Sunset Road, Kuta, Bali "} />
+            <ScheduleInfo title={"Check operation at Giga Factory 1"} location={"at Central Jakarta "} time={"18.00-20.00"} bordercolor={"#6972C3"} />
           </div>
         </div>
       </div>

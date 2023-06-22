@@ -34,7 +34,7 @@ const PieChart = () => {
       };
 
     return (
-        <div style={{width : "100px", height: "100px"}}>
+        <div style={{width : "130px", height: "130px"}}>
             <Pie options={options} data={data} />
         </div>
     )
