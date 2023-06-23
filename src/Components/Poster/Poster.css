@@ -1,33 +1,32 @@
 .poster-container {
-    width: 175px;
-    height: 75px;
+    width: 17%;
+    min-width: 175px;
+    height: 11vh;
     background-color: #DDEFE0;
     border-radius: 20px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1.5% 2%;
     justify-content: space-between;
 }
 
 .poster-icon {
     align-self: flex-end;
-    width: 26px;
-    height: 24px;
+    width: 11%;
+    max-width: 26px;
+    height: auto;
 }
 
 .poster-heading {
     color: #000;
-    font-size: 14px;
+    font-size: 0.9vw;
     font-family: 'Lato', sans-serif;
 }
 
 .poster-count {
     color: #000;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }

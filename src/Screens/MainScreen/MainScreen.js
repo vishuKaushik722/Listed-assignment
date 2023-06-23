@@ -91,7 +91,7 @@ const MainScreen = () => {
                 Today’s schedule
               </div>
               <div className='see-all'>
-              See All 
+              See All &#62;
               </div>
             </div>
             <ScheduleInfo title={"Meeting with suppliers from Kuta Bali"} bordercolor={"#9BDD7C"} time={"14.00-15.00"} location={"at Sunset Road, Kuta, Bali "} />
