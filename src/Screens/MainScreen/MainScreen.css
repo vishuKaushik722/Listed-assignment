@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   background-color: #f5f5f5;
-  overflow: hidden;
 }
 
 .app {
@@ -22,7 +21,6 @@ body {
 }
 
 .navbar {
-  width: 17%;
   background-color: #f0f0f0;
   padding-left: 3.5%;
   padding-top: 4.3%;
@@ -32,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 6.3%;
 }
 
 .navbar ul {
@@ -55,7 +54,7 @@ body {
 }
 
 .nav-text {
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   margin-top: 5.5vh;
   color: #fff;
@@ -64,7 +63,7 @@ body {
 }
 
 .dashboard {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-top: 8vh;
@@ -74,18 +73,18 @@ body {
 }
 
 .board-text {
-  font-size: 2.3vw;
+  font-size: 2.3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #fff;
 }
 
 .nav-img {
-  margin-right: 1.3vw;
+  margin-right: 1.3rem;
 }
 
 .bottom-nav {
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   margin-top: 2vh;
@@ -104,24 +103,24 @@ body {
 }
 
 .user-img {
-  width: 2.3vw;
-  height: 2.3vw;
-  background: lightgray -1.2vw -0.2vw / 184% 128.552% no-repeat;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: lightgray -1.2rem -0.2rem / 184% 128.552% no-repeat;
   border-radius: 50%;
 }
 
 .right-dashboard {
   color: #000;
-  font-size: 1.6vw;
+  font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
 
 .notification {
-  width: 1.3vw;
-  height: 1.4vw;
-  margin-left: 2vw;
-  margin-right: 1.5vw;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
 }
 
 .search {
@@ -136,7 +135,7 @@ input[type="search"] {
   border: none;
   background: transparent;
   margin: 0;
-  padding: 7px 8px;
+  padding: 5px 4px;
   font-size: 14px;
   color: inherit;
   border-radius: inherit;
@@ -145,7 +144,6 @@ input[type="search"] {
 input[type="search"]::placeholder {
   color: #bbb;
 }
-
 
 button[type="submit"] {
   text-indent: -999px;
@@ -167,7 +165,7 @@ button[type="submit"]:hover {
 
 .search-text {
   color: var(--light-grey, #B0B0B0);
-  font-size: 14px;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
 }
 
@@ -183,14 +181,14 @@ button[type="submit"]:hover {
   padding-bottom: 1.5%;
   padding-right: 4.3%;
   background-color: #fff;
-  border-radius: 1.5vw;
+  border-radius: 1.5rem;
 }
 
 .chart-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.7vw;
+  margin-bottom: 0.7rem;
 }
 
 .chart-markup {
@@ -199,14 +197,14 @@ button[type="submit"]:hover {
 
 .activity-text {
   color: #000;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight:bold;
 }
 
 .activity-date {
   color: var(--secondary-text, #858585);
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -216,14 +214,14 @@ ul {
 
 .guest-li {
   color: #000;
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-family: 'Lato', sans-serif;
-  margin-right: 3vw;
+  margin-right: 3rem;
 }
 
 .users-li {
   color: #000;
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-family: 'Lato', sans-serif;
 }
 
@@ -246,19 +244,17 @@ ul {
 }
 
 .card1 {
-  width: 40%;
   background-color: #fff;
-  border-radius: 1.5vw;
-  padding: 1.2vw;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
   padding-left: 4%;
   padding-right: 4%;
 }
 
 .card2 {
-  width: 40%;
   background-color: #fff;
-  border-radius: 1.5vw;
-  padding: 1.2vw;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
 }
 
 
@@ -270,14 +266,14 @@ ul {
 
 .schedule-title {
   color: #000;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 .see-all {
   color: var(--secondary-text, #858585);
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -303,60 +299,103 @@ ul {
 
 .pie-heading {
   color: #000;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
 .pie-head-date {
   color: var(--secondary-text, #858585);
-  font-size: 1vw;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 
+.toggle {
+  position: fixed;
+  bottom: 30px;
+  left: 25px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.582);
+  border-radius: 50%;
+  width: 20%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-width: 0;
+}
 
 
-/* Additional media query for mobile devices */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .app {
-    flex-direction: column;
-    height: auto;
-    padding: 5%;
+    padding-right: 2.5%;
   }
-
   .navbar {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-
-  .content {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 50%;
+    height: 86%;
+    padding: 5% 10%;
     margin: 0;
   }
-
-  .nav-text,
-  .dashboard,
-  .board-text,
-  .bottom-nav {
-    font-size: 4vw;
+  .content {
+    margin-left: 0;
   }
-
-  .user-img {
-    width: 8vw;
-    height: 8vw;
-    background-size: cover;
-  }
-
   .right-dashboard {
-    font-size: 4vw;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    line-height: 50px;
   }
-
   .search {
-    padding: 5px;
-    border-radius: 5px;
+    padding: 0;
+    width: 120px;
+  }
+  button[type="submit"] {
+    display: none;
   }
 
-  input[type="search"] {
-    font-size: 12px;
+  .row2, .row3 {
+    margin-top: 20px;
   }
+
+  .row4 {
+    display: block;
+    width: 100%;
+  }
+
+  .card1, .card2 {
+    margin-top: 20px;
+  }
+  .card2 {
+    margin-bottom: 20px;
+  }
+
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  .row2 > * {
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media screen and (min-width: 767px) {
+  .card1, .card2 {
+    width: 40%;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+.open {
+  display: block;
+  transition: left 0.3s ease;
 }

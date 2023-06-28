@@ -3,3 +3,14 @@
     font-family: 'Lato', sans-serif;
     color: var(--secondary-text, #858585);
 }
+.width-height {
+    width: 1000px;
+    height: 160px;
+}
+
+.chart-container {
+    width: 100%;
+    height: 75%;
+  }
+
+  

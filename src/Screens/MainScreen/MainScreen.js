@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./MainScreen.css";
 import Poster from '../../Components/Poster/Poster';
 import ChartComponent from '../../Components/Chart/ChartComponent';
@@ -7,9 +7,16 @@ import ScheduleInfo from '../../Components/ScheduleInfo/ScheduleInfo';
 import PieDetails from '../../Components/PieDetails/PieDetails';
 
 const MainScreen = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className="app">
-      <div className="navbar">
+      <div className={`navbar ${isOpen ? 'open' : ''}`}>
         <div>
             <div className='board-text'>Board.</div>
             <ul>
@@ -30,6 +37,9 @@ const MainScreen = () => {
             </ul>
         </div>
       </div>
+      <button onClick={toggleSidebar} className='toggle'>
+          Toggle
+      </button>
       <div className="content">
 
         <div className="row1">
@@ -94,8 +104,10 @@ const MainScreen = () => {
               See All &#62;
               </div>
             </div>
-            <ScheduleInfo title={"Meeting with suppliers from Kuta Bali"} bordercolor={"#9BDD7C"} time={"14.00-15.00"} location={"at Sunset Road, Kuta, Bali "} />
-            <ScheduleInfo title={"Check operation at Giga Factory 1"} location={"at Central Jakarta "} time={"18.00-20.00"} bordercolor={"#6972C3"} />
+            <div className='info-schedule'>
+              <ScheduleInfo title={"Meeting with suppliers from Kuta Bali"} bordercolor={"#9BDD7C"} time={"14.00-15.00"} location={"at Sunset Road, Kuta, Bali "} />
+              <ScheduleInfo title={"Check operation at Giga Factory 1"} location={"at Central Jakarta "} time={"18.00-20.00"} bordercolor={"#6972C3"} />
+            </div>
           </div>
         </div>
       </div>

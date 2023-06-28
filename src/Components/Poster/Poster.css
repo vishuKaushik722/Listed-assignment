@@ -1,6 +1,5 @@
 .poster-container {
     width: 17%;
-    min-width: 175px;
     height: 11vh;
     background-color: #DDEFE0;
     border-radius: 20px;
@@ -14,19 +13,28 @@
 .poster-icon {
     align-self: flex-end;
     width: 11%;
-    max-width: 26px;
     height: auto;
 }
 
 .poster-heading {
     color: #000;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
     font-family: 'Lato', sans-serif;
 }
 
 .poster-count {
     color: #000;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+    .poster-container {
+        width: 60%;
+        padding: 10%
+    }
+    .poster-icon {
+        width: 18%;
+    }
 }
