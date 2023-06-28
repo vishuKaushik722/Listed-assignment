@@ -313,3 +313,50 @@ ul {
   font-size: 1vw;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/* Additional media query for mobile devices */
+
+@media screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    height: auto;
+    padding: 5%;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  .nav-text,
+  .dashboard,
+  .board-text,
+  .bottom-nav {
+    font-size: 4vw;
+  }
+
+  .user-img {
+    width: 8vw;
+    height: 8vw;
+    background-size: cover;
+  }
+
+  .right-dashboard {
+    font-size: 4vw;
+  }
+
+  .search {
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  input[type="search"] {
+    font-size: 12px;
+  }
+}
