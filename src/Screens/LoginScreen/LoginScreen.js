@@ -44,10 +44,10 @@ const LoginScreen = () => {
             </div>
 
             <form>
-                <label className='email' for="username">Email address</label>
+                <label className='email' htmlFor="username">Email address</label>
                 <input type="text" placeholder="Email or Phone" id="username" />
 
-                <label for="password">Password</label>
+                <label style={{marginTop: "30px"}} htmlFor="password">Password</label>
                 <input type="password" placeholder="Password" id="password" />
 
                 <div className='forgot'>Forgot Password?</div>
