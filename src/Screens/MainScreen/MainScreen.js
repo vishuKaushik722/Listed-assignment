@@ -5,6 +5,7 @@ import ChartComponent from '../../Components/Chart/ChartComponent';
 import PieChart from '../../Components/PieChart';
 import ScheduleInfo from '../../Components/ScheduleInfo/ScheduleInfo';
 import PieDetails from '../../Components/PieDetails/PieDetails';
+import { FaBars, FaXmark } from 'react-icons/fa6';
 
 const MainScreen = () => {
 
@@ -19,6 +20,9 @@ const MainScreen = () => {
       <div className={`navbar ${isOpen ? 'open' : ''}`}>
         <div>
             <div className='board-text'>Board.</div>
+            <button onClick={toggleSidebar} className={`toggle-none ${isOpen ? 'toggle-open' : ''}`}>
+              <FaXmark size={30} />
+            </button>
             <ul>
                 <li className='dashboard'>
                     <img className='nav-img' src='dashboard_icon.png' /> 
@@ -37,8 +41,8 @@ const MainScreen = () => {
             </ul>
         </div>
       </div>
-      <button onClick={toggleSidebar} className='toggle'>
-          Toggle
+      <button onClick={toggleSidebar} className={`toggle ${isOpen ? 'toggle-none' : ''}`}>
+          <FaBars color='black' size={32} />
       </button>
       <div className="content">
 

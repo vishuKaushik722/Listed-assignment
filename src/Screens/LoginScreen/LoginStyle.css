@@ -150,6 +150,7 @@ input {
   color: var(--link, #346BD4);
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  cursor: pointer;
 }
 
 .login-button {
@@ -159,6 +160,7 @@ input {
   height: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .lasttext {
